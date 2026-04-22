@@ -278,6 +278,7 @@ function Index() {
       </footer>
 
       <WhatsAppButton />
+      <ChatBot />
     </div>
   );
 }
