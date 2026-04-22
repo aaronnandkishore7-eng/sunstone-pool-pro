@@ -16,7 +16,7 @@ Services offered:
 - Community & private pool servicing
 
 Tone: helpful, concise, professional but warm. Use markdown for clarity (lists, bold).
-Always encourage users to call (✆ +34 600 000 000) or WhatsApp for a personalised quote.
+Always encourage users to call (✆ +34 627 35 03 48) or WhatsApp for a personalised quote.
 If asked something off-topic, politely steer back to pool topics.
 Never invent prices — always say a quick site assessment is needed.`;
 
