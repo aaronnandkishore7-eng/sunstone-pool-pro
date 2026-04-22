@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { ChatBot } from "@/components/ChatBot";
 import heroPool from "@/assets/hero-pool.jpg";
 import aboutPool from "@/assets/about-pool.jpg";
 import logo from "@/assets/logo.jpeg";
@@ -277,6 +278,7 @@ function Index() {
       </footer>
 
       <WhatsAppButton />
+      <ChatBot />
     </div>
   );
 }
