@@ -2,8 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ChatBot } from "@/components/ChatBot";
-import heroPool from "@/assets/hero-pool.jpg";
-import aboutPool from "@/assets/about-pool.jpg";
 import logo from "@/assets/logo.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -41,7 +39,7 @@ const trust = [
 const areas = ["Marbella", "Estepona", "San Pedro", "Benahavís", "Nueva Andalucía"];
 
 const testimonials = [
-  { quote: "Reliable, knowledgeable and always solves the problem properly. The team I trust with our community pool.", author: "Carlos M.", role: "Property Manager, Marbella" },
+  { quote: "I had numerous problems with my salt water pool, until I hired Pool Specialists 4 years ago. The result was a dramatically improved water quality, and an electrolysis system that functioned perfectly without the need to constantly replace the expensive platinum plates. I am totally satisfied with Pool Specialists' pool maintenance, and give them my highest recommendation.", author: "Mr H. Varzi", role: "Salt water pool owner" },
   { quote: "Upgraded our entire system — huge difference in running costs and the water has never looked better.", author: "Sarah & James", role: "Villa Owners, Estepona" },
   { quote: "Quick response, fair pricing, and they actually know what they're doing. Rare to find on the coast.", author: "Diego R.", role: "Nueva Andalucía" },
 ];
@@ -53,9 +51,12 @@ function Index() {
 
       {/* HERO */}
       <section className="relative isolate min-h-[92vh] overflow-hidden">
-        <img src={heroPool} alt="Luxury Marbella pool at sunset" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
+        <div className="absolute inset-0 bg-navy-deep" />
+        <div className="absolute inset-x-0 top-0 h-full bg-[radial-gradient(circle_at_50%_30%,rgba(232,180,37,0.18),transparent_36%)]" />
         <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-6 py-24">
+          <div className="mb-10 flex justify-center lg:justify-start">
+            <img src={logo} alt="Pool Specialists Marbella" className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-[var(--shadow-elegant)] sm:max-w-md" />
+          </div>
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-gold backdrop-blur">
               <span className="h-1.5 w-1.5 rounded-full bg-gold" /> Costa del Sol · Since 1999
@@ -130,7 +131,7 @@ function Index() {
       <section id="about" className="bg-navy py-24 text-white">
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center">
           <div className="relative">
-            <img src={aboutPool} alt="Modern pool heating equipment" loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)]" />
+            <img src={logo} alt="Pool Specialists Marbella heating upgrades maintenance logo" loading="lazy" className="rounded-3xl bg-white p-10 shadow-[var(--shadow-elegant)]" />
             <div className="absolute -bottom-8 -right-4 hidden rounded-2xl bg-[var(--gradient-gold)] px-8 py-6 text-navy-deep shadow-[var(--shadow-gold)] sm:block">
               <div className="font-display text-5xl font-bold">25+</div>
               <div className="text-xs font-bold uppercase tracking-widest">Years on the coast</div>
