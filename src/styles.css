@@ -1,6 +1,7 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -62,17 +63,32 @@
 }
 
 :root {
-  --radius: 0.625rem;
+  --radius: 0.75rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.21 0.05 254);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.21 0.05 254);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.21 0.05 254);
+  --primary: oklch(0.28 0.09 254);
+  --primary-foreground: oklch(0.99 0.01 95);
+  --secondary: oklch(0.97 0.015 240);
+  --secondary-foreground: oklch(0.28 0.09 254);
+
+  /* Brand tokens — Pool Specialists Marbella */
+  --navy: oklch(0.28 0.09 254);
+  --navy-deep: oklch(0.22 0.08 254);
+  --gold: oklch(0.78 0.14 78);
+  --gold-deep: oklch(0.68 0.15 70);
+  --pool: oklch(0.72 0.12 215);
+  --sand: oklch(0.97 0.02 85);
+
+  --gradient-hero: linear-gradient(135deg, oklch(0.22 0.08 254 / 0.85), oklch(0.28 0.09 254 / 0.55));
+  --gradient-gold: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+  --gradient-water: linear-gradient(180deg, oklch(0.95 0.03 215), oklch(1 0 0));
+  --shadow-elegant: 0 20px 50px -20px oklch(0.28 0.09 254 / 0.35);
+  --shadow-gold: 0 12px 30px -10px oklch(0.78 0.14 78 / 0.55);
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --muted: oklch(0.968 0.007 247.896);
   --muted-foreground: oklch(0.554 0.046 257.417);
   --accent: oklch(0.968 0.007 247.896);
@@ -132,6 +148,17 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-pool: var(--pool);
+  --color-sand: var(--sand);
+  --font-display: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
@@ -140,5 +167,11 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.02em;
   }
 }
