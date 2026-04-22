@@ -70,13 +70,13 @@ function Index() {
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="tel:+34600000000"
+                href="tel:+34627350348"
                 className="group inline-flex items-center gap-3 rounded-full bg-[var(--gradient-gold)] px-8 py-4 text-base font-bold text-navy-deep shadow-[var(--shadow-gold)] transition-all hover:scale-105"
               >
                 ✆ Call Now
               </a>
               <a
-                href="https://wa.me/34600000000"
+                href="https://wa.me/34627350348"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 rounded-full border-2 border-white/80 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur transition-all hover:bg-white hover:text-navy"
@@ -209,10 +209,10 @@ function Index() {
             We'll assess your system and recommend the right solution — no guesswork, no upselling.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="tel:+34600000000" className="inline-flex items-center gap-3 rounded-full bg-[var(--gradient-gold)] px-8 py-4 font-bold text-navy-deep shadow-[var(--shadow-gold)] transition-transform hover:scale-105">
+            <a href="tel:+34627350348" className="inline-flex items-center gap-3 rounded-full bg-[var(--gradient-gold)] px-8 py-4 font-bold text-navy-deep shadow-[var(--shadow-gold)] transition-transform hover:scale-105">
               ✆ Call Now
             </a>
-            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 rounded-full border-2 border-white px-8 py-4 font-bold text-white transition-all hover:bg-white hover:text-navy">
+            <a href="https://wa.me/34627350348" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 rounded-full border-2 border-white px-8 py-4 font-bold text-white transition-all hover:bg-white hover:text-navy">
               💬 WhatsApp Quote
             </a>
           </div>
@@ -229,14 +229,14 @@ function Index() {
               <p className="mt-4 text-muted-foreground">Call, WhatsApp or email — we reply fast.</p>
 
               <div className="mt-10 space-y-5">
-                <a href="tel:+34600000000" className="flex items-center gap-4 rounded-2xl border border-border p-5 transition-all hover:border-gold hover:shadow-[var(--shadow-elegant)]">
+                <a href="tel:+34627350348" className="flex items-center gap-4 rounded-2xl border border-border p-5 transition-all hover:border-gold hover:shadow-[var(--shadow-elegant)]">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--gradient-gold)] text-xl">✆</div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Phone</div>
-                    <div className="font-semibold text-navy">+34 600 000 000</div>
+                    <div className="font-semibold text-navy">+34 627 35 03 48</div>
                   </div>
                 </a>
-                <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-border p-5 transition-all hover:border-gold hover:shadow-[var(--shadow-elegant)]">
+                <a href="https://wa.me/34627350348" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-border p-5 transition-all hover:border-gold hover:shadow-[var(--shadow-elegant)]">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-xl text-white">💬</div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">WhatsApp</div>

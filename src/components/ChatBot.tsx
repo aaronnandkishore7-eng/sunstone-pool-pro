@@ -52,7 +52,7 @@ export function ChatBot() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label="Open chat"
-        className="fixed bottom-6 right-24 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--gradient-gold)] text-navy-deep shadow-[var(--shadow-gold)] transition-all hover:scale-105"
+        className="fixed bottom-28 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--gradient-gold)] text-navy-deep shadow-[var(--shadow-gold)] transition-all hover:scale-105 sm:bottom-32"
       >
         {open ? (
           <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
@@ -67,7 +67,7 @@ export function ChatBot() {
 
       {/* Panel */}
       {open && (
-        <div className="fixed bottom-24 right-6 z-50 flex h-[560px] max-h-[80vh] w-[calc(100vw-3rem)] max-w-sm flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-[var(--shadow-elegant)]">
+        <div className="fixed bottom-48 right-6 z-50 flex h-[520px] max-h-[70vh] w-[calc(100vw-3rem)] max-w-sm flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-[var(--shadow-elegant)]">
           <div className="flex items-center gap-3 bg-navy px-5 py-4 text-white">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--gradient-gold)] text-navy-deep">
               💬

@@ -28,7 +28,7 @@ export function Header() {
             </a>
           ))}
           <a
-            href="tel:+34600000000"
+            href="tel:+34627350348"
             className="rounded-full bg-[var(--gradient-gold)] px-5 py-2.5 text-sm font-semibold text-navy-deep shadow-[var(--shadow-gold)] transition-transform hover:scale-105"
           >
             ✆ Call Now
@@ -52,7 +52,7 @@ export function Header() {
                 {l.label}
               </a>
             ))}
-            <a href="tel:+34600000000" className="mt-2 rounded-full bg-[var(--gradient-gold)] px-5 py-3 text-center text-sm font-semibold text-navy-deep">
+            <a href="tel:+34627350348" className="mt-2 rounded-full bg-[var(--gradient-gold)] px-5 py-3 text-center text-sm font-semibold text-navy-deep">
               ✆ Call Now
             </a>
           </div>
