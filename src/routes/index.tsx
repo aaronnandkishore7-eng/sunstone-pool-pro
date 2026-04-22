@@ -2,6 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ChatBot } from "@/components/ChatBot";
+import poolHero from "@/assets/pool-hero.jpg";
+import poolSystem from "@/assets/pool-system.jpg";
+import poolResort from "@/assets/pool-resort.jpg";
+import poolTiles from "@/assets/pool-tiles.jpg";
 import logo from "@/assets/logo.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -44,6 +48,8 @@ const testimonials = [
   { quote: "Quick response, fair pricing, and they actually know what they're doing. Rare to find on the coast.", author: "Diego R.", role: "Nueva Andalucía" },
 ];
 
+const gallery = [poolResort, poolTiles, poolSystem];
+
 function Index() {
   return (
     <div id="top" className="min-h-screen bg-background">
@@ -51,11 +57,11 @@ function Index() {
 
       {/* HERO */}
       <section className="relative isolate min-h-[92vh] overflow-hidden">
-        <div className="absolute inset-0 bg-navy-deep" />
-        <div className="absolute inset-x-0 top-0 h-full bg-[radial-gradient(circle_at_50%_30%,rgba(232,180,37,0.18),transparent_36%)]" />
+        <img src={poolHero} alt="Clear community swimming pool in Marbella" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-6 py-24">
           <div className="mb-10 flex justify-center lg:justify-start">
-            <img src={logo} alt="Pool Specialists Marbella" className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-[var(--shadow-elegant)] sm:max-w-md" />
+            <img src={logo} alt="Pool Specialists Marbella" className="w-full max-w-xs rounded-2xl bg-white p-5 shadow-[var(--shadow-elegant)] sm:max-w-sm" />
           </div>
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-gold backdrop-blur">
@@ -131,7 +137,7 @@ function Index() {
       <section id="about" className="bg-navy py-24 text-white">
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center">
           <div className="relative">
-            <img src={logo} alt="Pool Specialists Marbella heating upgrades maintenance logo" loading="lazy" className="rounded-3xl bg-white p-10 shadow-[var(--shadow-elegant)]" />
+            <img src={poolSystem} alt="Professional pool pump and pipe installation" loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)]" />
             <div className="absolute -bottom-8 -right-4 hidden rounded-2xl bg-[var(--gradient-gold)] px-8 py-6 text-navy-deep shadow-[var(--shadow-gold)] sm:block">
               <div className="font-display text-5xl font-bold">25+</div>
               <div className="text-xs font-bold uppercase tracking-widest">Years on the coast</div>
@@ -140,7 +146,7 @@ function Index() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold">About Us</p>
             <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">
-              Not general cleaners — <span className="text-gold">pool system specialists.</span>
+              Experienced <span className="text-gold">pool system specialists.</span>
             </h2>
             <p className="mt-6 text-lg text-white/80">
               With over 25 years of hands-on experience on the Costa del Sol, we focus on doing the job right
@@ -155,6 +161,20 @@ function Index() {
               ))}
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-20">
+        <div className="mx-auto grid max-w-7xl gap-5 px-6 md:grid-cols-3">
+          {gallery.map((image, index) => (
+            <img
+              key={image}
+              src={image}
+              alt={["Luxury pool in Marbella", "Decorative tiled swimming pool", "Pool plant room installation"][index]}
+              loading="lazy"
+              className="h-72 w-full rounded-2xl object-cover shadow-sm"
+            />
+          ))}
         </div>
       </section>
 
