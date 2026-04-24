@@ -6,6 +6,8 @@ import poolHero from "@/assets/pool-hero.jpg";
 import poolSystem from "@/assets/pool-system.jpg";
 import poolResort from "@/assets/pool-resort.jpg";
 import poolTiles from "@/assets/pool-tiles.jpg";
+import poolNightLed from "@/assets/pool-night-led.jpg";
+import poolPlantRoom from "@/assets/pool-plant-room.jpg";
 import logo from "@/assets/logo.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -48,7 +50,13 @@ const testimonials = [
   { quote: "Quick response, fair pricing, and they actually know what they're doing. Rare to find on the coast.", author: "Diego R.", role: "Nueva Andalucía" },
 ];
 
-const gallery = [poolResort, poolTiles, poolSystem];
+const gallery = [
+  { src: poolNightLed, alt: "LED-lit pool at night with vivid blue lighting", position: "center 70%" },
+  { src: poolResort, alt: "Luxury resort-style pool in Marbella", position: "center" },
+  { src: poolPlantRoom, alt: "Professional pool plant room with filtration system", position: "center 60%" },
+  { src: poolTiles, alt: "Decorative tiled swimming pool", position: "center" },
+  { src: poolSystem, alt: "Pool pump and pipework installation", position: "center" },
+];
 
 function Index() {
   return (
@@ -165,16 +173,24 @@ function Index() {
       </section>
 
       <section className="bg-background py-20">
-        <div className="mx-auto grid max-w-7xl gap-5 px-6 md:grid-cols-3">
-          {gallery.map((image, index) => (
-            <img
-              key={image}
-              src={image}
-              alt={["Luxury pool in Marbella", "Decorative tiled swimming pool", "Pool plant room installation"][index]}
-              loading="lazy"
-              className="h-72 w-full rounded-2xl object-cover shadow-sm"
-            />
-          ))}
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-12 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold-deep">Our Work</p>
+            <h2 className="mt-3 font-display text-4xl font-bold text-navy sm:text-5xl">Recent Projects</h2>
+          </div>
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {gallery.map((image) => (
+              <div key={image.src} className="group overflow-hidden rounded-2xl shadow-sm">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  loading="lazy"
+                  style={{ objectPosition: image.position }}
+                  className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -247,7 +263,7 @@ function Index() {
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold-deep">Get In Touch</p>
               <h2 className="mt-3 font-display text-4xl font-bold text-navy sm:text-5xl">Contact Us</h2>
-              <p className="mt-4 text-muted-foreground">Call, WhatsApp or email — we reply fast.</p>
+              <p className="mt-4 text-muted-foreground">Call or WhatsApp — we reply fast.</p>
 
               <div className="mt-10 space-y-5">
                 <a href="tel:+34627350348" className="flex items-center gap-4 rounded-2xl border border-border p-5 transition-all hover:border-gold hover:shadow-[var(--shadow-elegant)]">
@@ -262,13 +278,6 @@ function Index() {
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">WhatsApp</div>
                     <div className="font-semibold text-navy">Fast quote in minutes</div>
-                  </div>
-                </a>
-                <a href="mailto:info@poolspecialistsmarbella.com" className="flex items-center gap-4 rounded-2xl border border-border p-5 transition-all hover:border-gold hover:shadow-[var(--shadow-elegant)]">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-xl text-white">✉</div>
-                  <div>
-                    <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Email</div>
-                    <div className="font-semibold text-navy">info@poolspecialistsmarbella.com</div>
                   </div>
                 </a>
               </div>
