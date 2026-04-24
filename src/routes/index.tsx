@@ -48,6 +48,8 @@ const testimonials = [
   { quote: "I had numerous problems with my salt water pool, until I hired Pool Specialists 4 years ago. The result was a dramatically improved water quality, and an electrolysis system that functioned perfectly without the need to constantly replace the expensive platinum plates. I am totally satisfied with Pool Specialists' pool maintenance, and give them my highest recommendation.", author: "Mr H. Varzi", role: "Salt water pool owner" },
   { quote: "Upgraded our entire system — huge difference in running costs and the water has never looked better.", author: "Sarah & James", role: "Villa Owners, Estepona" },
   { quote: "Quick response, fair pricing, and they actually know what they're doing. Rare to find on the coast.", author: "Diego R.", role: "Nueva Andalucía" },
+  { quote: "We can now use our pool all year round thanks to Pool Specialists Marbella. The heating system is efficient and surprisingly economical to run. Installation was clean and professional.", author: "Anonymous", role: "Pool Owner" },
+  { quote: "Professional job from start to finish. The new pump runs smoothly and the system has never been better.", author: "Anonymous", role: "Pool Owner" },
 ];
 
 const gallery = [
@@ -176,7 +178,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 text-center">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold-deep">Our Work</p>
-            <h2 className="mt-3 font-display text-4xl font-bold text-navy sm:text-5xl">Recent Projects</h2>
+            <h2 className="mt-3 font-display text-4xl font-bold text-navy sm:text-5xl">Past Projects</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {gallery.map((image) => (
