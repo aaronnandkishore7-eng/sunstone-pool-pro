@@ -46,8 +46,6 @@ const areas = ["Marbella", "Estepona", "San Pedro", "Benahavís", "Nueva Andaluc
 
 const testimonials = [
   { quote: "I had numerous problems with my salt water pool, until I hired Pool Specialists 4 years ago. The result was a dramatically improved water quality, and an electrolysis system that functioned perfectly without the need to constantly replace the expensive platinum plates. I am totally satisfied with Pool Specialists' pool maintenance, and give them my highest recommendation.", author: "Mr H. Varzi", role: "Salt water pool owner" },
-  { quote: "Upgraded our entire system — huge difference in running costs and the water has never looked better.", author: "Sarah & James", role: "Villa Owners, Estepona" },
-  { quote: "Quick response, fair pricing, and they actually know what they're doing. Rare to find on the coast.", author: "Diego R.", role: "Nueva Andalucía" },
   { quote: "We can now use our pool all year round thanks to Pool Specialists Marbella. The heating system is efficient and surprisingly economical to run. Installation was clean and professional.", author: "Anonymous", role: "Pool Owner" },
   { quote: "Professional job from start to finish. The new pump runs smoothly and the system has never been better.", author: "Anonymous", role: "Pool Owner" },
 ];
