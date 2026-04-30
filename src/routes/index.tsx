@@ -9,6 +9,7 @@ import poolTiles from "@/assets/pool-tiles.jpg";
 import poolNightLed from "@/assets/pool-night-led.jpg";
 import poolPlantRoom from "@/assets/pool-plant-room.jpg";
 import poolElectrolysis from "@/assets/pool-electrolysis.jpg";
+import poolTiledClassic from "@/assets/pool-tiles-original.jpg";
 import logo from "@/assets/logo.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -56,6 +57,7 @@ const gallery = [
   { src: poolResort, alt: "Luxury resort-style pool in Marbella", position: "center" },
   { src: poolPlantRoom, alt: "Professional pool plant room with filtration system", position: "center 60%" },
   { src: poolTiles, alt: "Decorative mosaic tiled swimming pool", position: "center" },
+  { src: poolTiledClassic, alt: "Classic tiled swimming pool", position: "center" },
   { src: poolElectrolysis, alt: "Modern salt chlorination electrolysis system", position: "center" },
 ];
 
