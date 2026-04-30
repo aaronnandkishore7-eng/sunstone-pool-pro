@@ -8,6 +8,7 @@ import poolResort from "@/assets/pool-resort.jpg";
 import poolTiles from "@/assets/pool-tiles.jpg";
 import poolNightLed from "@/assets/pool-night-led.jpg";
 import poolPlantRoom from "@/assets/pool-plant-room.jpg";
+import poolElectrolysis from "@/assets/pool-electrolysis.jpg";
 import logo from "@/assets/logo.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -51,11 +52,11 @@ const testimonials = [
 ];
 
 const gallery = [
-  { src: poolNightLed, alt: "LED-lit pool at night with vivid blue lighting", position: "center 70%" },
+  { src: poolNightLed, alt: "Pool with hardwood deck and integrated LED lighting", position: "center" },
   { src: poolResort, alt: "Luxury resort-style pool in Marbella", position: "center" },
   { src: poolPlantRoom, alt: "Professional pool plant room with filtration system", position: "center 60%" },
-  { src: poolTiles, alt: "Decorative tiled swimming pool", position: "center" },
-  { src: poolSystem, alt: "Pool pump and pipework installation", position: "center" },
+  { src: poolTiles, alt: "Decorative mosaic tiled swimming pool", position: "center" },
+  { src: poolElectrolysis, alt: "Modern salt chlorination electrolysis system", position: "center" },
 ];
 
 function Index() {
