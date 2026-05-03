@@ -50,6 +50,8 @@ const testimonials = [
   { quote: "I had numerous problems with my salt water pool, until I hired Pool Specialists 4 years ago. The result was a dramatically improved water quality, and an electrolysis system that functioned perfectly without the need to constantly replace the expensive platinum plates. I am totally satisfied with Pool Specialists' pool maintenance, and give them my highest recommendation.", author: "Mr H. Varzi", role: "Salt water pool owner" },
   { quote: "We can now use our pool all year round thanks to Pool Specialists Marbella. The heating system is efficient and surprisingly economical to run. Installation was clean and professional.", author: "Anonymous", role: "Pool Owner" },
   { quote: "Professional job from start to finish. The new pump runs smoothly and the system has never been better.", author: "Anonymous", role: "Pool Owner" },
+  { quote: "Quick to respond and even quicker to fix the issue. Our pool was back up and running the same day.", author: "Anonymous", role: "Villa Owner" },
+  { quote: "Honest advice, fair pricing and quality workmanship. Couldn't ask for more.", author: "Anonymous", role: "Community Pool Manager" },
 ];
 
 const gallery = [
