@@ -19,10 +19,10 @@ import logo from "@/assets/logo.jpeg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pool Specialists Marbella | Pool Maintenance, Heating & Repair Costa del Sol" },
+      { title: "Marbella Pool Specialists | Pool Maintenance, Heating & Repair Costa del Sol" },
       { name: "description", content: "25+ years experience in pool installation, upgrades, repairs and maintenance across Marbella, Estepona, San Pedro, Benahavís & Nueva Andalucía. Call now for a fast quote." },
       { name: "keywords", content: "pool maintenance Marbella, pool repair Estepona, pool heating Costa del Sol, salt chlorination, pool specialists Marbella" },
-      { property: "og:title", content: "Pool Specialists Marbella — 25+ Years on the Costa del Sol" },
+      { property: "og:title", content: "Marbella Pool Specialists — 25+ Years on the Costa del Sol" },
       { property: "og:description", content: "Installation • Upgrades • Repairs • Maintenance. Community & private pool experts." },
       { property: "og:type", content: "website" },
     ],
@@ -52,7 +52,7 @@ const areas = ["Marbella", "Estepona", "San Pedro", "Benahavís", "Nueva Andaluc
 
 const testimonials = [
   { quote: "I had numerous problems with my salt water pool, until I hired Pool Specialists 4 years ago. The result was a dramatically improved water quality, and an electrolysis system that functioned perfectly without the need to constantly replace the expensive platinum plates. I am totally satisfied with Pool Specialists' pool maintenance, and give them my highest recommendation.", author: "Mr H. Varzi", role: "Salt water pool owner" },
-  { quote: "We can now use our pool all year round thanks to Pool Specialists Marbella. The heating system is efficient and surprisingly economical to run. Installation was clean and professional.", author: "Anonymous", role: "Pool Owner" },
+  { quote: "We can now use our pool all year round thanks to Marbella Pool Specialists. The heating system is efficient and surprisingly economical to run. Installation was clean and professional.", author: "Anonymous", role: "Pool Owner" },
   { quote: "Professional job from start to finish. The new pump runs smoothly and the system has never been better.", author: "Anonymous", role: "Pool Owner" },
   { quote: "Quick to respond and even quicker to fix the issue. Our pool was back up and running the same day.", author: "Anonymous", role: "Villa Owner" },
   { quote: "Honest advice, fair pricing and quality workmanship. Couldn't ask for more.", author: "Anonymous", role: "Community Pool Manager" },
@@ -81,7 +81,7 @@ function Index() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-6 py-24">
           <div className="mb-10 flex justify-center lg:justify-start">
-            <img src={logo} alt="Pool Specialists Marbella" className="w-full max-w-xs rounded-2xl bg-white p-5 shadow-[var(--shadow-elegant)] sm:max-w-sm" />
+            <img src={logo} alt="Marbella Pool Specialists" className="w-full max-w-xs rounded-2xl bg-white p-5 shadow-[var(--shadow-elegant)] sm:max-w-sm" />
           </div>
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-gold backdrop-blur">
@@ -313,9 +313,9 @@ function Index() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 sm:flex-row">
           <div className="flex items-center gap-3">
             <img src={logo} alt="" className="h-9 w-9 rounded-full" />
-            <span className="font-display text-sm">Pool Specialists Marbella</span>
+            <span className="font-display text-sm">Marbella Pool Specialists</span>
           </div>
-          <p className="text-xs">© {new Date().getFullYear()} Pool Specialists Marbella · Costa del Sol</p>
+          <p className="text-xs">© {new Date().getFullYear()} Marbella Pool Specialists · Costa del Sol</p>
         </div>
       </footer>
 

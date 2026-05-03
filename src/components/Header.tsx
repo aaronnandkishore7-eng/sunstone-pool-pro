@@ -15,7 +15,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/50 bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         <a href="#top" className="flex items-center gap-3">
-          <img src={logo} alt="Pool Specialists Marbella" className="h-12 w-12 rounded-full object-cover" />
+          <img src={logo} alt="Marbella Pool Specialists" className="h-12 w-12 rounded-full object-cover" />
           <div className="leading-tight">
             <div className="font-display text-lg font-bold text-navy">Pool Specialists</div>
             <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-deep">Marbella</div>
