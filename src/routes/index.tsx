@@ -5,11 +5,15 @@ import { ChatBot } from "@/components/ChatBot";
 import poolHero from "@/assets/pool-hero.jpg";
 import poolSystem from "@/assets/pool-system.jpg";
 import poolResort from "@/assets/pool-resort.jpg";
-import poolTiles from "@/assets/pool-tiles.jpg";
-import poolNightLed from "@/assets/pool-night-led.jpg";
-import poolPlantRoom from "@/assets/pool-plant-room.jpg";
-import poolElectrolysis from "@/assets/pool-electrolysis.jpg";
-import poolTiledClassic from "@/assets/pool-tiles-original.jpg";
+import project1 from "@/assets/project-1.jpg";
+import project2 from "@/assets/project-2.jpg";
+import project3 from "@/assets/project-3.jpg";
+import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
+import project6 from "@/assets/project-6.jpg";
+import project7 from "@/assets/project-7.jpg";
+import project8 from "@/assets/project-8.jpg";
+import project9 from "@/assets/project-9.jpg";
 import logo from "@/assets/logo.jpeg";
 
 export const Route = createFileRoute("/")({
