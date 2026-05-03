@@ -5,11 +5,15 @@ import { ChatBot } from "@/components/ChatBot";
 import poolHero from "@/assets/pool-hero.jpg";
 import poolSystem from "@/assets/pool-system.jpg";
 import poolResort from "@/assets/pool-resort.jpg";
-import poolTiles from "@/assets/pool-tiles.jpg";
-import poolNightLed from "@/assets/pool-night-led.jpg";
-import poolPlantRoom from "@/assets/pool-plant-room.jpg";
-import poolElectrolysis from "@/assets/pool-electrolysis.jpg";
-import poolTiledClassic from "@/assets/pool-tiles-original.jpg";
+import project1 from "@/assets/project-1.jpg";
+import project2 from "@/assets/project-2.jpg";
+import project3 from "@/assets/project-3.jpg";
+import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
+import project6 from "@/assets/project-6.jpg";
+import project7 from "@/assets/project-7.jpg";
+import project8 from "@/assets/project-8.jpg";
+import project9 from "@/assets/project-9.jpg";
 import logo from "@/assets/logo.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -55,12 +59,15 @@ const testimonials = [
 ];
 
 const gallery = [
-  { src: poolNightLed, alt: "Pool with hardwood deck and integrated LED lighting", position: "center" },
-  { src: poolResort, alt: "Luxury resort-style pool in Marbella", position: "center" },
-  { src: poolPlantRoom, alt: "Professional pool plant room with filtration system", position: "center 60%" },
-  { src: poolTiles, alt: "Decorative mosaic tiled swimming pool", position: "center" },
-  { src: poolTiledClassic, alt: "Classic tiled swimming pool", position: "center" },
-  { src: poolElectrolysis, alt: "Modern salt chlorination electrolysis system", position: "center" },
+  { src: project1, alt: "Mosaic tiled community pool with curved feature wall", position: "center" },
+  { src: project2, alt: "Pool plant room pipework and filter housing", position: "center" },
+  { src: project3, alt: "Underwater view of tiled pool steps and ladder", position: "center" },
+  { src: project4, alt: "Decorative mosaic tile band on pool wall", position: "center" },
+  { src: project5, alt: "Private villa pool with travertine surround", position: "center" },
+  { src: project6, alt: "Large villa pool surrounded by tropical garden", position: "center" },
+  { src: project7, alt: "Hardwood pool deck with integrated LED lighting", position: "center" },
+  { src: project8, alt: "Pool extension construction with steel reinforcement", position: "center" },
+  { src: project9, alt: "Sand filter installation in pool plant room", position: "center" },
 ];
 
 function Index() {
