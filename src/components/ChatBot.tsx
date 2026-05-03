@@ -6,7 +6,7 @@ type Msg = { role: "user" | "assistant"; content: string };
 const WELCOME: Msg = {
   role: "assistant",
   content:
-    "Hi! 👋 I'm the Pool Specialists Marbella assistant. Ask me about **heating, salt systems, repairs, maintenance** or any pool issue you're having on the Costa del Sol.",
+    "Hi! 👋 I'm the Marbella Pool Specialists assistant. Ask me about **heating, salt systems, repairs, maintenance** or any pool issue you're having on the Costa del Sol.",
 };
 
 export function ChatBot() {

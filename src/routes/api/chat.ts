@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-const SYSTEM_PROMPT = `You are the friendly AI assistant for Pool Specialists Marbella, a pool installation, upgrade, repair and maintenance company on the Costa del Sol with 25+ years of experience.
+const SYSTEM_PROMPT = `You are the friendly AI assistant for Marbella Pool Specialists, a pool installation, upgrade, repair and maintenance company on the Costa del Sol with 25+ years of experience.
 
 Service areas: Marbella, Estepona, San Pedro, Benahavís, Nueva Andalucía.
 
