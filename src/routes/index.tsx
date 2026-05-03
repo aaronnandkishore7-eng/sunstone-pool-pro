@@ -280,7 +280,7 @@ function Index() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-xl text-white">💬</div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">WhatsApp</div>
-                    <div className="font-semibold text-navy">Fast quote in minutes</div>
+                    <div className="font-semibold text-navy">Rapid response</div>
                   </div>
                 </a>
               </div>
